@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffe6f8;
+}
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background-color: #bc9eff;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+.heading {
+    padding-bottom: 10px;
+    color: #7014b7;
+}
+.input-field {
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.input-container button{
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #ffe6f8;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.todo-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ede4ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.checkbox-stl {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.checkbox-stl::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+.checkbox-stl:checked::before {
+    background-color: #84ff9f;
+    content: '\2714';
+    font-size: 16px;
+    text-align: center;
+
+}
+.delete-btn {
+    margin-left: 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
