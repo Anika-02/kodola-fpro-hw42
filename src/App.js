@@ -1,12 +1,11 @@
-import './App.css';
+import ToDoList from "./components/toDoList/ToDoList";
 import React from "react";
-
-import ToDoScript from "./components/toDoList/toDoListScript";
+import './App.css';
 
 function App() {
   return (
       <div>
-        <ToDoScript />
+        <ToDoList />
       </div>
   );
 }

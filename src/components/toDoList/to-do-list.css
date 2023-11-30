@@ -7,10 +7,10 @@ body {
 }
 .main-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;*/
+    /*align-items: flex-start;*/
     flex-direction: column;
-    width: 600px;
+    width: 700px;
     height: 100%;
     background-color: #bc9eff;
     padding: 50px;
@@ -18,16 +18,28 @@ body {
     border-radius: 20px;
     font-size: 24px;
 }
+
 .heading {
-    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #7014b7;
 }
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
 .input-field {
-    width: 350px;
+    width: 300px;
     height: 30px;
     border-radius: 10px;
     border: none;
-    margin-bottom: 40px;
     font-size: 20px;
 }
 .input-container button{
@@ -37,18 +49,35 @@ body {
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
 }
+
+.select-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    margin-left: 20px;
+    padding: 8px;
+    background-color: #ffe6f8;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 .todo-container {
     display: flex;
     align-items: flex-start;
+    justify-content: left;
     flex-direction: column;
     gap: 10px;
 }
 .todo-item {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color: #ede4ff;
     border-radius: 10px;
@@ -77,6 +106,11 @@ body {
     text-align: center;
 
 }
+
+.todo-text.completed {
+    text-decoration: none;
+}
+
 .delete-btn {
     margin-left: 14px;
     font-size: 14px;
